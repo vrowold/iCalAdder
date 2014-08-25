@@ -21,6 +21,8 @@
 		6183287519AAC9D200FA5E6D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6183285719AAC9D200FA5E6D /* UIKit.framework */; };
 		6183287D19AAC9D200FA5E6D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6183287B19AAC9D200FA5E6D /* InfoPlist.strings */; };
 		6183287F19AAC9D200FA5E6D /* iCalAdderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6183287E19AAC9D200FA5E6D /* iCalAdderTests.m */; };
+		6183288919AAE00B00FA5E6D /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6183288819AAE00B00FA5E6D /* EventKit.framework */; };
+		6183288C19AAE66B00FA5E6D /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 6183288B19AAE66B00FA5E6D /* Event.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		6183287A19AAC9D200FA5E6D /* iCalAdderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iCalAdderTests-Info.plist"; sourceTree = "<group>"; };
 		6183287C19AAC9D200FA5E6D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6183287E19AAC9D200FA5E6D /* iCalAdderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iCalAdderTests.m; sourceTree = "<group>"; };
+		6183288819AAE00B00FA5E6D /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		6183288A19AAE66B00FA5E6D /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		6183288B19AAE66B00FA5E6D /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6183288919AAE00B00FA5E6D /* EventKit.framework in Frameworks */,
 				6183285619AAC9D200FA5E6D /* CoreGraphics.framework in Frameworks */,
 				6183285819AAC9D200FA5E6D /* UIKit.framework in Frameworks */,
 				6183285419AAC9D200FA5E6D /* Foundation.framework in Frameworks */,
@@ -101,6 +107,7 @@
 		6183285219AAC9D200FA5E6D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6183288819AAE00B00FA5E6D /* EventKit.framework */,
 				6183285319AAC9D200FA5E6D /* Foundation.framework */,
 				6183285519AAC9D200FA5E6D /* CoreGraphics.framework */,
 				6183285719AAC9D200FA5E6D /* UIKit.framework */,
@@ -117,6 +124,8 @@
 				6183286519AAC9D200FA5E6D /* Main.storyboard */,
 				6183286819AAC9D200FA5E6D /* HelloWorldViewController.h */,
 				6183286919AAC9D200FA5E6D /* HelloWorldViewController.m */,
+				6183288A19AAE66B00FA5E6D /* Event.h */,
+				6183288B19AAE66B00FA5E6D /* Event.m */,
 				6183286B19AAC9D200FA5E6D /* Images.xcassets */,
 				6183285A19AAC9D200FA5E6D /* Supporting Files */,
 			);
@@ -250,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6183288C19AAE66B00FA5E6D /* Event.m in Sources */,
 				6183286419AAC9D200FA5E6D /* HelloWorldAppDelegate.m in Sources */,
 				6183286A19AAC9D200FA5E6D /* HelloWorldViewController.m in Sources */,
 				6183286019AAC9D200FA5E6D /* main.m in Sources */,
@@ -380,6 +390,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iCalAdder/iCalAdder-Prefix.pch";
 				INFOPLIST_FILE = "iCalAdder/iCalAdder-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -393,6 +404,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iCalAdder/iCalAdder-Prefix.pch";
 				INFOPLIST_FILE = "iCalAdder/iCalAdder-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

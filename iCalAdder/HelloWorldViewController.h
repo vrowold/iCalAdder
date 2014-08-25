@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <EventKit/EventKit.h>
 
 @interface HelloWorldViewController : UIViewController
+- (IBAction)addEventAction:(id)sender;
 
 @end
