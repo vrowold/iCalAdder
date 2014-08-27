@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <EventKit/EventKit.h>
 #import "Event.h"
+#import "CalendarHelper.h"
 
 @interface HelloWorldViewController : UIViewController
 - (IBAction)addEventAction:(id)sender;

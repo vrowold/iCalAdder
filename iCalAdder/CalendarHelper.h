@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <EventKit/EventKit.h>
+#import "Event.h"
 
 @interface CalendarHelper : NSObject
+
++ (void)addEvent:(Event *)newEvent;
 
 @end

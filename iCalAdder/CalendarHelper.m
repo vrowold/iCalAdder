@@ -10,10 +10,7 @@
 
 @implementation CalendarHelper
 
-dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0ul);
-NSString *title = @"New Event";
-
-dispatch_async(queue, ^{
++ (void)addEvent:(Event *)newEvent{
     
     EKEventStore *eventStore = [[EKEventStore alloc] init];
     
@@ -21,21 +18,21 @@ dispatch_async(queue, ^{
         
         if (granted){
             EKEvent *event  = [EKEvent eventWithEventStore:eventStore];
-            event.title     = @"Fake Event";
-            
-            event.startDate = [[NSDate alloc] init];
-            event.endDate   = [[NSDate alloc] initWithTimeInterval:3600 sinceDate:event.startDate];
+            event.title     = [newEvent title];
+            event.startDate = [newEvent startDate];
+            event.endDate   = [newEvent endDate];
             
             [event setCalendar:[eventStore defaultCalendarForNewEvents]];
             NSError *err;
             [eventStore saveEvent:event span:EKSpanThisEvent error:&err];
             
+            
         }else
         {
-            //----- codes here when user NOT allow your app to access the calendar.
+            
         }
     }];
     
-});
+};
 
 @end
