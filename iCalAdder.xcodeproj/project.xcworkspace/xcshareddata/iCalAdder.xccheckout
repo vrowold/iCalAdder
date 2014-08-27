@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>7F71463A-B60F-4E71-9207-997B298C96F8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>iCalAdder</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>AAF90E1F-FC86-49AF-8DB5-ACAE47FFB5CD</key>
+		<string>https://github.com/vrowold/iCalAdder.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iCalAdder.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>AAF90E1F-FC86-49AF-8DB5-ACAE47FFB5CD</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/vrowold/iCalAdder.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>AAF90E1F-FC86-49AF-8DB5-ACAE47FFB5CD</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>AAF90E1F-FC86-49AF-8DB5-ACAE47FFB5CD</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iCalAdder</string>
+		</dict>
+	</array>
+</dict>
+</plist>

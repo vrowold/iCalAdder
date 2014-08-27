@@ -10,4 +10,10 @@
 
 @interface Event : NSObject
 
+@property NSDate *startDate;
+
+@property NSDate *endDate;
+
+@property NSString *title;
+
 @end

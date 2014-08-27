@@ -23,6 +23,7 @@
 		6183287F19AAC9D200FA5E6D /* iCalAdderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6183287E19AAC9D200FA5E6D /* iCalAdderTests.m */; };
 		6183288919AAE00B00FA5E6D /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6183288819AAE00B00FA5E6D /* EventKit.framework */; };
 		6183288C19AAE66B00FA5E6D /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 6183288B19AAE66B00FA5E6D /* Event.m */; };
+		61C7DD4019AD71FF0086B142 /* CalendarHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C7DD3F19AD71FF0086B142 /* CalendarHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		6183288819AAE00B00FA5E6D /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		6183288A19AAE66B00FA5E6D /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
 		6183288B19AAE66B00FA5E6D /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
+		61C7DD3E19AD71FF0086B142 /* CalendarHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarHelper.h; sourceTree = "<group>"; };
+		61C7DD3F19AD71FF0086B142 /* CalendarHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +126,8 @@
 				6183286319AAC9D200FA5E6D /* HelloWorldAppDelegate.m */,
 				6183286519AAC9D200FA5E6D /* Main.storyboard */,
 				6183286819AAC9D200FA5E6D /* HelloWorldViewController.h */,
+				61C7DD3E19AD71FF0086B142 /* CalendarHelper.h */,
+				61C7DD3F19AD71FF0086B142 /* CalendarHelper.m */,
 				6183286919AAC9D200FA5E6D /* HelloWorldViewController.m */,
 				6183288A19AAE66B00FA5E6D /* Event.h */,
 				6183288B19AAE66B00FA5E6D /* Event.m */,
@@ -261,6 +266,7 @@
 			files = (
 				6183288C19AAE66B00FA5E6D /* Event.m in Sources */,
 				6183286419AAC9D200FA5E6D /* HelloWorldAppDelegate.m in Sources */,
+				61C7DD4019AD71FF0086B142 /* CalendarHelper.m in Sources */,
 				6183286A19AAC9D200FA5E6D /* HelloWorldViewController.m in Sources */,
 				6183286019AAC9D200FA5E6D /* main.m in Sources */,
 			);
@@ -469,6 +475,7 @@
 				6183288419AAC9D300FA5E6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6183288519AAC9D300FA5E6D /* Build configuration list for PBXNativeTarget "iCalAdderTests" */ = {
 			isa = XCConfigurationList;
@@ -477,6 +484,7 @@
 				6183288719AAC9D300FA5E6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

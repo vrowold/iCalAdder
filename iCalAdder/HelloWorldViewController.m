@@ -28,6 +28,14 @@
 
 - (IBAction)addEventAction:(id)sender {
     
+    Event *e  = [[Event alloc] init];
+    [e setTitle:@"Eventname"];
+    [e setStartDate:[[NSDate alloc] init]];
+    [e setEndDate:[[NSDate alloc] initWithTimeInterval:3600 sinceDate:[e startDate]]];
+    
+    
+    
+    
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0ul);
     NSString *title = @"New Event";
     

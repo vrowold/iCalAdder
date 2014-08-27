@@ -8,11 +8,10 @@
 
 #import "Event.h"
 
+
+
 @implementation Event
 
 
--(void) addToCalendar:(Time) t {
-    
-}
 
 @end
