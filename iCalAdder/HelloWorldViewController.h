@@ -22,5 +22,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *lblStatus;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *bbitemStart;
 
+-(void)stopReading;
 
 @end

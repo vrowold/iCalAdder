@@ -43,7 +43,7 @@
         }
     }
     else{
-        //[self stopReading];
+        [self stopReading];
         [_bbitemStart setTitle:@"Start!"];
     }
     _isReading = !_isReading;
@@ -95,6 +95,27 @@
     [_captureSession startRunning];
     
     return YES;
+}
+
+-(void)captureOutput:(AVCaptureOutput *)captureOutput didOutputMetadataObjects:(NSArray *)metadataObjects fromConnection:(AVCaptureConnection *)connection{
+    if (metadataObjects != nil && [metadataObjects count] > 0) {
+        AVMetadataMachineReadableCodeObject *metadataObj = [metadataObjects objectAtIndex:0];
+        if ([[metadataObj type] isEqualToString:AVMetadataObjectTypeQRCode]) {
+            [_lblStatus performSelectorOnMainThread:@selector(setText:) withObject:[metadataObj stringValue] waitUntilDone:NO];
+            
+            [self performSelectorOnMainThread:@selector(stopReading) withObject:nil waitUntilDone:NO];
+            [_bbitemStart performSelectorOnMainThread:@selector(setTitle:) withObject:@"Start!" waitUntilDone:NO];
+            _isReading = NO;
+            
+        }
+    
+    }
+}
+-(void)stopReading{
+    [_captureSession stopRunning];
+    _captureSession = nil;
+    
+    [_videoPreviewLayer removeFromSuperlayer];
 }
 
 
