@@ -10,13 +10,33 @@
 
 @implementation QRHelper
 
-+ (void)parseQRData:(NSString *)iCalData{
++ (void)parse:(NSString *)iCalData{
     
     NSArray *events = [iCalData componentsSeparatedByString:@":::"];
     
-    NSLog(@"%@",iCalData);
-    NSLog(@"%@",[events objectAtIndex:(0)]);
-    NSLog(@"%@",[events objectAtIndex:(1)]);
+    for (int i = 0; i<[events count]; i++) {
+        
+        NSArray *eventDescription = [[events objectAtIndex:i] componentsSeparatedByString:@"::"];
+        
+        NSDateFormatter *formatter = [[NSDateFormatter alloc]init];
+        [formatter setDateFormat:@"MMddyyyyHHmm"];
+        
+        Event *event  = [[Event alloc] init];
+        [event setTitle:[eventDescription objectAtIndex:0]];
+        [event setStartDate:[formatter dateFromString:[eventDescription objectAtIndex:1]]];
+        [event setEndDate:[[NSDate alloc] initWithTimeInterval:3600*[[eventDescription objectAtIndex:2] intValue] sinceDate:[event startDate]]];
+        
+        
+        dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0ul);
+        
+        
+        dispatch_async(queue, ^{
+            
+            [CalendarHelper addEvent:event];
+            
+        });
+    }
+
     
 
     

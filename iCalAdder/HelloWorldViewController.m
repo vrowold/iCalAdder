@@ -110,10 +110,10 @@
             [_bbitemStart performSelectorOnMainThread:@selector(setTitle:) withObject:@"Start!" waitUntilDone:NO];
             NSLog(@"%@",[metadataObj stringValue]);
             
-            NSString *testEvents = @"title1::101320141315::1::description1:::title2::101320141315::1::description2";
-            QRHelper *helperObject = [[QRHelper alloc]init];
+            NSString *testEvents = @"title1::101420141315::1::description1:::title2::101520141315::1::description2";
             
-            [helperObject parseQRData:testEvents];
+            
+            [QRHelper parse:testEvents];
             
             _isReading = NO;
             

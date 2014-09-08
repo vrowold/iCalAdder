@@ -13,10 +13,11 @@
 + (void)addEvent:(Event *)newEvent{
     
     EKEventStore *eventStore = [[EKEventStore alloc] init];
-    
+
     [eventStore requestAccessToEntityType:EKEntityTypeEvent completion:^(BOOL granted, NSError *error) {
         
         if (granted){
+            
             EKEvent *event  = [EKEvent eventWithEventStore:eventStore];
             event.title     = [newEvent title];
             event.startDate = [newEvent startDate];

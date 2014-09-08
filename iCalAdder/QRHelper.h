@@ -8,9 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import "Event.h"
+#import "CalendarHelper.h"
 
 @interface QRHelper : NSObject
 
-+ (void)parseQRData:(NSString *)iCalData;
++ (void)parse:(NSString *)iCalData;
 
 @end
