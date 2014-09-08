@@ -7,6 +7,7 @@
 //
 
 #import "HelloWorldViewController.h"
+#import "QRHelper.h"
 
 @interface HelloWorldViewController ()
 @property (nonatomic) BOOL isReading;
@@ -24,7 +25,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	
+
+    
+    
     _isReading = NO;
     _captureSession = nil;
 }
@@ -105,12 +108,20 @@
             
             [self performSelectorOnMainThread:@selector(stopReading) withObject:nil waitUntilDone:NO];
             [_bbitemStart performSelectorOnMainThread:@selector(setTitle:) withObject:@"Start!" waitUntilDone:NO];
+            NSLog(@"%@",[metadataObj stringValue]);
+            
+            NSString *testEvents = @"title1::101320141315::1::description1:::title2::101320141315::1::description2";
+            QRHelper *helperObject = [[QRHelper alloc]init];
+            
+            [helperObject parseQRData:testEvents];
+            
             _isReading = NO;
             
         }
     
     }
 }
+
 -(void)stopReading{
     [_captureSession stopRunning];
     _captureSession = nil;

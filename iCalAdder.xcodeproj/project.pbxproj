@@ -23,6 +23,7 @@
 		6183287F19AAC9D200FA5E6D /* iCalAdderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6183287E19AAC9D200FA5E6D /* iCalAdderTests.m */; };
 		6183288919AAE00B00FA5E6D /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6183288819AAE00B00FA5E6D /* EventKit.framework */; };
 		6183288C19AAE66B00FA5E6D /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 6183288B19AAE66B00FA5E6D /* Event.m */; };
+		61ABE9E119B79010000098EB /* QRHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 61ABE9E019B79010000098EB /* QRHelper.m */; };
 		61C7DD4019AD71FF0086B142 /* CalendarHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C7DD3F19AD71FF0086B142 /* CalendarHelper.m */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,8 @@
 		6183288819AAE00B00FA5E6D /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		6183288A19AAE66B00FA5E6D /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
 		6183288B19AAE66B00FA5E6D /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
+		61ABE9DF19B79010000098EB /* QRHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRHelper.h; sourceTree = "<group>"; };
+		61ABE9E019B79010000098EB /* QRHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRHelper.m; sourceTree = "<group>"; };
 		61C7DD3E19AD71FF0086B142 /* CalendarHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarHelper.h; sourceTree = "<group>"; };
 		61C7DD3F19AD71FF0086B142 /* CalendarHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -129,6 +132,8 @@
 				6183286919AAC9D200FA5E6D /* HelloWorldViewController.m */,
 				61C7DD3E19AD71FF0086B142 /* CalendarHelper.h */,
 				61C7DD3F19AD71FF0086B142 /* CalendarHelper.m */,
+				61ABE9DF19B79010000098EB /* QRHelper.h */,
+				61ABE9E019B79010000098EB /* QRHelper.m */,
 				6183288A19AAE66B00FA5E6D /* Event.h */,
 				6183288B19AAE66B00FA5E6D /* Event.m */,
 				6183286B19AAC9D200FA5E6D /* Images.xcassets */,
@@ -269,6 +274,7 @@
 			files = (
 				6183288C19AAE66B00FA5E6D /* Event.m in Sources */,
 				6183286419AAC9D200FA5E6D /* HelloWorldAppDelegate.m in Sources */,
+				61ABE9E119B79010000098EB /* QRHelper.m in Sources */,
 				61C7DD4019AD71FF0086B142 /* CalendarHelper.m in Sources */,
 				6183286A19AAC9D200FA5E6D /* HelloWorldViewController.m in Sources */,
 				6183286019AAC9D200FA5E6D /* main.m in Sources */,
